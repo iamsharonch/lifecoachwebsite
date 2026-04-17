@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/salon", "destination": "/index.html" },
+    { "source": "/coaching", "destination": "/index.html" }
+  ]
+}
