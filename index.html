@@ -927,119 +927,53 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
 
       <div class="pkg-grid">
         <!-- 單次會談 -->
-        <div class="pkg-card pkg-card-single">
-          <span class="pkg-label pkg-label-single">適合體驗、初次接觸</span>
-          <div class="pkg-title">首次一對一會談</div>
-          <div class="pkg-duration">Sharon · 60 分鐘 · 線上（Zoom）</div>
-          <div class="pkg-price-row">
-            <span class="pkg-price-cur">NT$</span>
-            <span class="pkg-price-big">2,800</span>
-            <span style="font-size:.72rem;color:var(--hint);">/ 次</span>
-          </div>
-          <div class="pkg-price-orig">原價 NT$3,200</div>
-
-          <!-- CIRCULAR FLOW DIAGRAM -->
-          <div style="background:var(--bg);border-radius:var(--r);padding:24px;margin-bottom:20px;border:1px solid var(--border);">
-            <p style="font-family:'Noto Serif TC',serif;font-size:.82rem;font-weight:400;color:var(--mauve-dk);margin-bottom:20px;text-align:center;">60min 包含</p>
-            <div style="position:relative;width:200px;height:200px;margin:0 auto 16px;">
-              <!-- SVG circle with arrows -->
-              <svg viewBox="0 0 200 200" style="position:absolute;inset:0;width:100%;height:100%;">
-                <circle cx="100" cy="100" r="72" fill="none" stroke="var(--blush)" stroke-width="1.5" stroke-dasharray="6 4"/>
-                <!-- arrows on circle path -->
-                <path d="M100,28 A72,72 0 0,1 162,78" fill="none" stroke="var(--rose-lt)" stroke-width="1.5" marker-end="url(#arr)"/>
-                <path d="M162,122 A72,72 0 0,1 100,172" fill="none" stroke="var(--rose-lt)" stroke-width="1.5" marker-end="url(#arr)"/>
-                <path d="M62,160 A72,72 0 0,1 38,100" fill="none" stroke="var(--rose-lt)" stroke-width="1.5" marker-end="url(#arr)"/>
-                <path d="M38,75 A72,72 0 0,1 100,28" fill="none" stroke="var(--rose-lt)" stroke-width="1.5" marker-end="url(#arr)"/>
-                <defs>
-                  <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-                    <path d="M0,0 L0,6 L6,3 z" fill="var(--rose-lt)"/>
-                  </marker>
-                </defs>
-              </svg>
-              <!-- 4 nodes positioned around circle -->
-              <!-- Top: 靜心冥想 -->
-              <div style="position:absolute;top:0;left:50%;transform:translate(-50%,0);text-align:center;width:72px;">
-                <div style="width:52px;height:52px;border-radius:50%;background:var(--rose);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.58rem;line-height:1.3;font-family:'Noto Serif TC',serif;font-weight:400;margin:0 auto;box-shadow:0 2px 8px rgba(176,122,114,.3);">靜心<br>冥想</div>
-              </div>
-              <!-- Right: 現況了解 -->
-              <div style="position:absolute;top:50%;right:0;transform:translate(0,-50%);text-align:center;width:72px;">
-                <div style="width:52px;height:52px;border-radius:50%;background:var(--mauve);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.58rem;line-height:1.3;font-family:'Noto Serif TC',serif;font-weight:400;margin:0 auto;box-shadow:0 2px 8px rgba(138,107,107,.3);">現況<br>了解</div>
-              </div>
-              <!-- Bottom: 卡點梳理 -->
-              <div style="position:absolute;bottom:0;left:50%;transform:translate(-50%,0);text-align:center;width:72px;">
-                <div style="width:52px;height:52px;border-radius:50%;background:var(--mauve);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.58rem;line-height:1.3;font-family:'Noto Serif TC',serif;font-weight:400;margin:0 auto;box-shadow:0 2px 8px rgba(138,107,107,.3);">卡點<br>梳理</div>
-              </div>
-              <!-- Left: 行動計畫 -->
-              <div style="position:absolute;top:50%;left:0;transform:translate(0,-50%);text-align:center;width:72px;">
-                <div style="width:52px;height:52px;border-radius:50%;background:var(--rose);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.58rem;line-height:1.3;font-family:'Noto Serif TC',serif;font-weight:400;margin:0 auto;box-shadow:0 2px 8px rgba(176,122,114,.3);">行動<br>計畫</div>
-              </div>
-            </div>
-            <!-- Legend -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;">
-              <div style="font-size:.7rem;color:var(--sub);line-height:1.6;padding:8px;background:var(--blush2);border-radius:8px;"><strong style="color:var(--rose);font-weight:400;display:block;margin-bottom:2px;">靜心冥想</strong>安定身心，進入對話狀態</div>
-              <div style="font-size:.7rem;color:var(--sub);line-height:1.6;padding:8px;background:var(--blush2);border-radius:8px;"><strong style="color:var(--mauve);font-weight:400;display:block;margin-bottom:2px;">現況了解</strong>釐清你卡住的情境與困擾</div>
-              <div style="font-size:.7rem;color:var(--sub);line-height:1.6;padding:8px;background:var(--blush2);border-radius:8px;"><strong style="color:var(--mauve);font-weight:400;display:block;margin-bottom:2px;">卡點梳理</strong>解開混亂，看見真正的卡點</div>
-              <div style="font-size:.7rem;color:var(--sub);line-height:1.6;padding:8px;background:var(--blush2);border-radius:8px;"><strong style="color:var(--rose);font-weight:400;display:block;margin-bottom:2px;">行動計畫</strong>當下能做的第一步</div>
-            </div>
-          </div>
-          <div class="pkg-divider"></div>
-          <p style="font-size:.74rem;color:var(--sub);margin-bottom:14px;">預約流程</p>
-          <div class="steps" style="margin-bottom:20px;">
-            <div class="step"><div class="step-n">1</div><p>完成匯款並填寫對帳資訊</p></div>
-            <div class="step"><div class="step-n">2</div><p>提交表單後，至 Email 查收 Calendly 連結</p></div>
-            <div class="step"><div class="step-n">3</div><p>選擇你方便的時段，完成預約 🌿</p></div>
-          </div>
-
-          <!-- COUNTDOWN -->
-          <div style="background:var(--blush2);border:1px solid var(--border);border-radius:var(--r);padding:20px;margin-bottom:16px;">
-            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px;">
-              <div><div style="font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--hint);margin-bottom:5px;">下次開放預約</div><div style="font-family:'Noto Serif TC',serif;font-size:.84rem;color:var(--sub);">2026/06/15 晚上 20:00</div></div>
-              <span id="c-status" style="font-size:.62rem;padding:2px 8px;border-radius:var(--r);background:var(--surface2);color:var(--hint);">尚未開放</span>
-            </div>
-            <div style="display:flex;align-items:baseline;gap:2px;">
-              <div style="display:flex;flex-direction:column;align-items:center;min-width:42px;"><span style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--rose);line-height:1;" id="c-d">--</span><span style="font-size:.54rem;color:var(--hint);letter-spacing:.14em;margin-top:2px;">天</span></div>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--blush);padding:0 2px;">·</span>
-              <div style="display:flex;flex-direction:column;align-items:center;min-width:42px;"><span style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--rose);line-height:1;" id="c-h">--</span><span style="font-size:.54rem;color:var(--hint);letter-spacing:.14em;margin-top:2px;">時</span></div>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--blush);padding:0 2px;">·</span>
-              <div style="display:flex;flex-direction:column;align-items:center;min-width:42px;"><span style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--rose);line-height:1;" id="c-m">--</span><span style="font-size:.54rem;color:var(--hint);letter-spacing:.14em;margin-top:2px;">分</span></div>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--blush);padding:0 2px;">·</span>
-              <div style="display:flex;flex-direction:column;align-items:center;min-width:42px;"><span style="font-family:'Cormorant Garamond',serif;font-size:1.7rem;color:var(--rose);line-height:1;" id="c-s">--</span><span style="font-size:.54rem;color:var(--hint);letter-spacing:.14em;margin-top:2px;">秒</span></div>
-            </div>
-            <div style="height:1px;background:var(--border);margin:12px 0;"></div>
-            <p style="font-size:.66rem;color:var(--hint);line-height:1.7;">✦ 前 3 名可享 <strong style="color:var(--rose);font-weight:400;">6 折優惠</strong>，敬請把握！</p><p style="font-size:.66rem;color:var(--hint);margin-top:8px;line-height:1.7;">💬 若想盡快報名會談，可直接私訊 Sharon！</p>
-          </div>
-
-          <!-- EMAIL CAPTURE -->
-          <div class="email-capture">
-            <div class="ec-title">搶先卡位</div>
-            <div class="ec-sub">6/15 開放預約時，第一時間通知你<br>前 3 名享 6 折限額優惠</div>
-            <div class="ec-row">
-              <input class="ec-input" type="text" id="ec-email" placeholder="你的 IG 帳號（@...）">
-              <button class="ec-btn" onclick="submitEmail()">通知我</button>
-            </div>
-            <div class="ec-success" id="ec-success">✦ 已登記！開放時第一時間通知你 🌿</div>
-            
-          </div>
-
+        <div class="pkg-card pkg-card-single" style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--border);">
+      <div>
+        <span class="pkg-label pkg-label-single">適合體驗教練、釐清當下卡點的你</span>
+        <h3 class="pkg-title" style="font-size: 1.4rem; margin-bottom: 4px;">首次一對一會談</h3>
+        <p style="font-size: 0.7rem; color: var(--hint); margin-bottom: 20px; letter-spacing: 0.05em;">Sharon · 60 分鐘 · 線上（Zoom）</p>
+        
+        <div style="background: var(--bg); border-radius: 16px; padding: 18px 12px; margin-bottom: 24px; border: 1px solid var(--border); min-height: 235px; display: flex; flex-direction: column; justify-content: center;">
+          <div style="font-size: 0.65rem; color: var(--hint); letter-spacing: 0.2em; text-align: center; margin-bottom: 12px; text-transform: uppercase;">Single Session Focus</div>
           
+          <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
+            <div style="font-size: 0.78rem; color: var(--text); background: white; padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border);">靜心冥想</div>
+            <div style="color: var(--border); font-size: 0.8rem;">↓</div>
+            <div style="font-size: 0.78rem; color: var(--text); background: white; padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border);">現況了解 ＆ 卡點梳理</div>
+            <div style="color: var(--border); font-size: 0.8rem;">↓</div>
+            <div style="font-size: 0.82rem; color: var(--rose); font-weight: 500; text-align: center; line-height: 1.5;">帶走一份<br>當下的行動計畫</div>
+          </div>
         </div>
 
-        <!-- 長期陪跑 -->
-        <div class="pkg-card pkg-card-accomp" style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(255,255,255,0.15);">
+        <div class="pkg-divider" style="margin: 20px 0;"></div>
+        
+        <div class="pkg-features">
+          <div class="pkg-price-row" style="margin-bottom: 8px;">
+            <span class="pkg-price-cur">NT$</span><span class="pkg-price-big">2,800</span><span style="font-size:.72rem;color:var(--hint);"> / 次</span>
+          </div>
+          <div class="pkg-feat">專業教練引導對話</div>
+          <div class="pkg-feat">深層情緒覺察與支持</div>
+          <div class="pkg-feat">適合初次接觸與體驗</div>
+        </div>
+      </div>
+      <div style="margin-top: 28px;">
+        <button class="btn btn-full" style="width: 100%;" onclick="window.open('https://ig.me/m/sharon.coaching_', '_blank')">立即預約</button>
+      </div>
+    </div>
+
+    <div class="pkg-card pkg-card-accomp" style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(255,255,255,0.15);">
       <div>
         <span class="pkg-label pkg-label-accomp">適合想要系統性改變、有具體目標的你</span>
         <h3 class="pkg-title" style="font-size: 1.4rem; margin-bottom: 4px; color: #FFFFFF;">180 天深度陪伴計畫</h3>
         <p style="font-size: 0.7rem; color: rgba(255,255,255,0.45); margin-bottom: 20px; letter-spacing: 0.05em;">費用請於首次會談後洽詢</p>
         
-        <div style="background: rgba(255,255,255,0.05); border-radius: 16px; padding: 18px 12px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.1);">
+        <div style="background: rgba(255,255,255,0.05); border-radius: 16px; padding: 18px 12px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.1); min-height: 235px; display: flex; flex-direction: column; justify-content: center;">
           <div style="font-size: 0.65rem; color: rgba(255,255,255,0.4); letter-spacing: 0.2em; text-align: center; margin-bottom: 12px; text-transform: uppercase;">Transformation Path</div>
           
           <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
-            <div style="font-size: 0.78rem; color: #FFF; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px;">認識自己</div>
+            <div style="font-size: 0.78rem; color: #FFF; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px;">認識自己 ➔ 覺察力</div>
             <div style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">↓</div>
-            <div style="font-size: 0.78rem; color: #FFF; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px;">提升覺察力 ＆ 自信</div>
-            <div style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">↓</div>
-            <div style="font-size: 0.78rem; color: #FFF; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px;">帶領與支持自己</div>
+            <div style="font-size: 0.78rem; color: #FFF; background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px;">提升自信 ＆ 支持自己</div>
             <div style="color: rgba(255,255,255,0.3); font-size: 0.8rem;">↓</div>
             <div style="font-size: 0.82rem; color: var(--rose-lt); font-weight: 500; text-align: center; line-height: 1.5;">發展多重收入<br>＆ 身心平衡人生</div>
           </div>
@@ -1048,17 +982,15 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
         <div class="pkg-divider" style="background: rgba(255,255,255,0.1); margin: 20px 0;"></div>
         
         <div class="pkg-features">
-          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">深度教練會談月會</div>
-          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">日常無限次訊息陪伴</div>
-          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">學員專屬練習</div>
-          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">學員專屬成長階梯</div>
-          <div class="pkg-feat" style="color: rgba(255,255,255,0.5); font-size: 0.72rem; margin-top: 4px;">更多 2026 限定加贈項目，將於會談時詳細說明 🌿</div>
+          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">深度教練會談月會 / 訊息陪伴</div>
+          <div class="pkg-feat" style="color: rgba(255,255,255,0.85);">學員專屬練習 ＆ 成長階梯</div>
+          <div class="pkg-feat" style="color: rgba(255,255,255,0.5); font-size: 0.72rem; margin-top: 4px;">更多 2026 加贈項目會談說明 🌿</div>
         </div>
       </div>
-
       <div style="margin-top: 28px;">
         <button class="pkg-btn pkg-btn-accomp" style="width: 100%; cursor: pointer; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);" onclick="window.open('https://ig.me/m/sharon.coaching_', '_blank')">預約首次會談</button>
       </div>
+    </div>
     </div>
 
       <!-- SECTION 3: 副業發展服務 -->
