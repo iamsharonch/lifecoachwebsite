@@ -733,73 +733,82 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-seri
     </div>
   </div>
 
-  <!-- 夥伴心得分享 -->
+<!-- 夥伴心得分享 -->
   <div style="background:var(--blush2);padding:72px 0;">
     <div class="wrap">
       <div class="eyebrow">夥伴心得分享</div>
-      <h2 class="display" style="font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:6px;">他們這樣說⋯</h2>
-      
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;">
-
-        <!-- 心得 1 -->
-        <div style="background:white;border-radius:var(--r);padding:32px 28px 24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;position:relative;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:4px;">"</div>
-          <p style="font-size:.86rem;line-height:2;color:var(--sub);">完成 21 天，我有意識的為自己保留了時間參加共讀，謝謝自己準備那麼美好的禮物給自己，也謝謝引導人 Sharon 的願意付出、也謝謝線上共讀的夥伴們，這是充滿能量的感覺，我會持續下去，因為我知道愛自己要及時 ❤️</p>
-          <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
-            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👨</div>
-            <div>
-              <div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 J</div>
-              
+      <h2 class="display" style="font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:32px;">他們這樣說⋯</h2>
+      <div style="position:relative;">
+        <div id="carousel-track" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+          <div class="tcard" data-slide="0" style="display:flex;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">完成 21 天，我有意識的為自己保留了時間參加共讀，謝謝自己準備那麼美好的禮物給自己，也謝謝引導人 Sharon 的願意付出、也謝謝線上共讀的夥伴們，這是充滿能量的感覺，我會持續下去，因為我知道愛自己要及時 ❤️</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👨</div>
+              <div><div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 J</div></div>
+            </div>
+          </div>
+          <div class="tcard" data-slide="0" style="display:flex;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">21天下來讓我重新找回閱讀的習慣！</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
+              <div><div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 V</div></div>
+            </div>
+          </div>
+          <div class="tcard" data-slide="0" style="display:flex;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">很開心可以跟著 Sharon 和夥伴一起成長，跟著你的腳步一起學習，會讓我自己成長得蠻快的，我是真心感謝你一直以來的帶領。</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
+              <div><div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 君</div></div>
+            </div>
+          </div>
+          <div class="tcard" data-slide="1" style="display:none;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">在參加沙龍後發現，要在生活中花一個小時好好的與自己高品質相處，需要一些用力。工作時每一刻都講求效率、休息時則想耍廢，很開心透過這 21 天，找回兩者之間的平衡 ❤️</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
+              <div><div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 Y</div></div>
+            </div>
+          </div>
+          <div class="tcard" data-slide="1" style="display:none;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">參加之前，我的個人品牌帳號卡關好幾個月，不知道自己在做什麼、為什麼而做。21 天後，我重新找回了創作的初心，也開始每天固定發文。Sharon 的引導讓我從「想太多」變成「先動起來」。</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
+              <div>
+                <div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 Iris</div>
+                <div style="font-size:.68rem;color:var(--hint);margin-top:2px;">個人品牌經營者</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard" data-slide="1" style="display:none;flex-direction:column;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:14px;">"</div>
+            <p style="font-size:.86rem;line-height:2;color:var(--sub);flex:1;">創業第二年遇到了撞牆期，每天焦慮卻什麼都做不了。參加沙龍後，透過每晚的冥想和書寫，我慢慢釐清了自己真正卡住的地方不是策略，而是對自己的不信任。現在接案量比以前多了三成，心態也穩了很多。</p>
+            <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
+              <div>
+                <div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 Claire</div>
+                <div style="font-size:.68rem;color:var(--hint);margin-top:2px;">自由接案設計師</div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- 心得 V -->
-        <div style="background:white;border-radius:var(--r);padding:32px 28px 24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:4px;">"</div>
-          <p style="font-size:.86rem;line-height:2;color:var(--sub);">21天下來讓我重新找回閱讀的習慣！</p>
-          <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
-            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
-            <div><div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 V</div></div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px;">
+          <button onclick="carouselMove(-1)" style="width:36px;height:36px;border-radius:50%;border:1.5px solid var(--rose-lt);background:white;color:var(--rose);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all .2s;">‹</button>
+          <div style="display:flex;gap:8px;">
+            <div class="c-dot" onclick="carouselGo(0)" style="width:20px;height:8px;border-radius:20px;background:var(--rose);cursor:pointer;transition:all .3s;"></div>
+            <div class="c-dot" onclick="carouselGo(1)" style="width:8px;height:8px;border-radius:50%;background:var(--blush);cursor:pointer;transition:all .3s;"></div>
           </div>
+          <button onclick="carouselMove(1)" style="width:36px;height:36px;border-radius:50%;border:1.5px solid var(--rose-lt);background:white;color:var(--rose);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all .2s;">›</button>
         </div>
-
-        <!-- 心得 Ju -->
-        <div style="background:white;border-radius:var(--r);padding:32px 28px 24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:4px;">"</div>
-          <p style="font-size:.86rem;line-height:2;color:var(--sub);">很開心可以跟著 Sharon 和夥伴一起成長，跟著你的腳步一起學習，會讓我自己成長得蠻快的，我是真心感謝你一直以來的帶領。</p>
-          <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
-            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
-            <div>
-              <div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 君</div>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- 心得 3 -->
-        <div style="background:white;border-radius:var(--r);padding:32px 28px 24px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--blush);line-height:.7;margin-bottom:4px;">"</div>
-          <p style="font-size:.86rem;line-height:2;color:var(--sub);">在參加沙龍後發現，要在生活中花一個小時好好的與自己高品質相處，需要一些用力。工作時每一刻都講求效率、休息時則想耍廢，很開心透過這 21 天，找回兩者之間的平衡。雖然過程中缺席了好幾次，但還是感受到這件事（冥想 → 閱讀 → 與自己高品質在一起）需要被刻意練習。也讓我更看清自己當下的狀態，並時刻提醒自己要有自己的生活與安排 ❤️</p>
-          <div style="margin-top:auto;padding-top:16px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px;">
-            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--rose-lt),var(--blush));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;">👩</div>
-            <div>
-              <div style="font-family:'Noto Serif TC',serif;font-size:.82rem;color:var(--mauve-dk);">夥伴 Y</div>
-              
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      <!-- 引導語 -->
       <div style="margin-top:40px;text-align:center;padding:28px;background:var(--rose-pale);border-radius:var(--r);">
         <p style="font-size:.88rem;color:var(--mauve-dk);"><a href="javascript:void(0)" onclick="document.getElementById('salon3-email').scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('salon3-email').focus();" style="color:var(--rose);text-decoration:none;font-family:'Noto Serif TC',serif;">歡迎加入下一期，留下你的故事 🌿</a></p>
       </div>
     </div>
   </div>
-
   <!-- 常見問題 -->
   <div class="wrap">
     <div class="section">
@@ -1201,6 +1210,28 @@ function cd(deadline,ids,statusId,openUrl){
 }
 cd(new Date('2026-04-06T18:00:00+08:00').getTime(),['s-d','s-h','s-m','s-s']);
 cd(new Date('2026-06-15T20:00:00+08:00').getTime(),['c-d','c-h','c-m','c-s'],'c-status');
+  let carouselCurrent = 0;
+const totalSlides = 2;
+function carouselRender() {
+  document.querySelectorAll('.tcard').forEach(card => {
+    const show = parseInt(card.dataset.slide) === carouselCurrent;
+    card.style.display = show ? 'flex' : 'none';
+  });
+  document.querySelectorAll('.c-dot').forEach((dot, i) => {
+    dot.style.background = i === carouselCurrent ? 'var(--rose)' : 'var(--blush)';
+    dot.style.width = i === carouselCurrent ? '20px' : '8px';
+    dot.style.borderRadius = '20px';
+  });
+}
+function carouselMove(dir) {
+  carouselCurrent = (carouselCurrent + dir + totalSlides) % totalSlides;
+  carouselRender();
+}
+function carouselGo(i) {
+  carouselCurrent = i;
+  carouselRender();
+}
+carouselRender();
 </script>
 </body>
 </html>
