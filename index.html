@@ -1126,8 +1126,56 @@ function submitEmail(){
   success.style.display='block';
 }
 
-function showTab(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById('panel-'+id).classList.add('active');document.querySelectorAll('.tab-btn').forEach(b=>{if(b.getAttribute('onclick')==="showTab('"+id+"')")b.classList.add('active');});window.scrollTo({top:0,behavior:'instant'});}
-document.querySelectorAll('.faq-btn').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement;const open=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!open)item.classList.add('open');});});
+// 1. 加強版 showTab：讓網址跟著按鈕變動
+function showTab(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  
+  const targetPanel = document.getElementById('panel-' + id);
+  if (targetPanel) {
+    targetPanel.classList.add('active');
+  }
+
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick') === "showTab('" + id + "')") {
+      b.classList.add('active');
+    }
+  });
+
+  window.scrollTo({ top: 0, behavior: 'instant' });
+
+  // 更新網址列：讓網址變為 /salon 或 /coaching
+  const newPath = id === 'home' ? '/' : `/${id}`;
+  if (window.location.pathname !== newPath) {
+    window.history.pushState({ tabId: id }, '', newPath);
+  }
+}
+
+// 2. 自動偵測網址：打開 /salon 就自動跳到沙龍頁
+function handleRouting() {
+  const path = window.location.pathname;
+  if (path === '/salon') {
+    showTab('salon');
+  } else if (path === '/coaching') {
+    showTab('coaching');
+  } else {
+    showTab('home');
+  }
+}
+
+// 3. 啟動監聽：網頁載入時執行一次
+window.addEventListener('load', handleRouting);
+window.addEventListener('popstate', handleRouting);
+
+// 4. 原本的 FAQ 展開邏輯
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
 function pad(n){return String(n).padStart(2,'0');}
 function cd(deadline,ids,statusId,openUrl){
   const els=ids.map(id=>document.getElementById(id));
